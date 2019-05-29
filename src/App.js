@@ -25,7 +25,7 @@ class App extends Component {
 
   evaluate = () => {
     this.setState({
-      result: (eval(this.state.result))
+      result: (eval(this.state.result)) + ""
     })
   };
 
@@ -52,10 +52,16 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Result 
-        result={this.state.result}
-        />
-        <Keypad onClick={this.onClick}/>
+        <div className="row">
+          <div className="column outside">.</div>
+          <div className="column middle">
+              <Result 
+              result={this.state.result}
+              />
+              <Keypad onClick={this.onClick}/>
+          </div>
+          <div className="column outside">.</div>
+        </div>
       </div>
     );
   }
