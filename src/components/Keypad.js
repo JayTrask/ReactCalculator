@@ -2,21 +2,14 @@ import React, { Component } from 'react'
 
 class Keypad extends Component{
 
- 	state = {
-	    currentValue: 0,
-	    bufferValue: 0,
-	    nextValue: 0,
-
-	    operator: undefined
- 	}
 
 	
 	render(){
 		return(
 			<div className="keypad">
-				<button className="keypad-button" name="sqrt" onClick={e => this.props.onClick(e.target.name)}>√</button>
-				<button className="keypad-button" name="%" onClick={e => this.props.onClick(e.target.name)}>%</button>
-				<button className="keypad-button" name="CE" onClick={e => this.props.onClick(e.target.name)}>CE</button>
+				<button className="keypad-button" name="(" onClick={e => this.props.onClick(e.target.name)}>(</button>
+				<button className="keypad-button" name=")" onClick={e => this.props.onClick(e.target.name)}>)</button>
+				<button className="keypad-button" name="back" onClick={e => this.props.onClick(e.target.name)}>back</button>
 				<button className="keypad-button" name="C" onClick={e => this.props.onClick(e.target.name)}>C</button>	<br/>
 
 				<button className="keypad-button" name="1" onClick={e => this.props.onClick(e.target.name)}>1</button>
