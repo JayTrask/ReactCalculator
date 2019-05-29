@@ -6,7 +6,7 @@ class Result extends Component{
 	render(){
 		let {result} = this.props.result;
 		return(
-			<div className="keypad">
+			<div className="result">
 			<p>{this.props.result}</p>
 			</div> 
 		);
