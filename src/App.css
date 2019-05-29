@@ -43,10 +43,11 @@
   background-image: linear-gradient(to top right, white, #eeeeee);
   background-color: white;
   border-style: none;
+  font-family: "arial bold", monospace;
 }
 
 .result{
-  color: brown;
+  color: black;
   margin-top: 30%;
   background-image: linear-gradient(to bottom right, beige, white);
   background-color: beige;
@@ -60,4 +61,10 @@
 
   font-family: "arial bold", monospace;
   font-size: x-large;
+}
+
+.credits{
+  color: white;
+  font-size: x-small;
+  font-family: "arial bold", monospace;
 }

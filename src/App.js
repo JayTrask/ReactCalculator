@@ -59,6 +59,9 @@ class App extends Component {
               result={this.state.result}
               />
               <Keypad onClick={this.onClick}/>
+
+              <br/>
+              <div className="credits">version 1.0 Created by Jay Trask</div>
           </div>
           <div className="column outside">.</div>
         </div>
